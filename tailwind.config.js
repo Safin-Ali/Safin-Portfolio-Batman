@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors:{
         sweetWhite: `var(--blackBlueLight)`,
+        bodyBg: `var(--bodybg)`,
         bgCard: `var(--card-bg)`,
         blackBlue: `var(--blackBlueLight)`,
         blackBlueLow: `var(--blackBlueLight-low-opacity)`,

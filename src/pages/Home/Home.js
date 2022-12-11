@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutMe from './AboutMe';
+import ContactForm from './ContactForm';
 import HeroSection from './HeroSection';
 import MyProjects from './MyProjects';
 import Services from './Services';
@@ -10,9 +11,10 @@ const Home = () => {
         <>
             <HeroSection></HeroSection>
             <SkillSection></SkillSection>
-            <AboutMe></AboutMe>
             <Services></Services>
             <MyProjects></MyProjects>
+            <AboutMe></AboutMe>
+            <ContactForm></ContactForm>
         </>
     );
 };

@@ -5,7 +5,7 @@ const ShowcaseCard = ({data}) => {
     const {name,thumb,technology,liveLink,sourceCode} = data;
     return (
         <>
-        <div className="border rounded-md bg-card text-sweetWhite w-full text-white-sa-01 hover:scale-[1.02] cursor-grab duration-[750ms]">
+        <div className="border rounded-md bg-bgCard text-sweetWhite w-full hover:scale-[1.02] cursor-grab duration-[750ms]">
               <div className={`border-b border-blackBlueLow`}><img src={thumb} className="rounded-t-md object-cover p-1" alt="Learn-Programz"/></div>
               <div className="px-4 my-2">
                 {/* <!-- project type header --> */}

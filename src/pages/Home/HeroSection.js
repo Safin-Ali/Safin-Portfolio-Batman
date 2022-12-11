@@ -6,7 +6,7 @@ const HeroSection = () => {
         <>
             <section className="my-[3%]" id="home">
                 {/*  my selft text  */}
-                <div className="grid gap-5 sm:grid-cols-2 items-center justify-center">
+                <div className="grid gap-5 sm:grid-cols-2 items-center justify-center py-[1.5%] px-[4%]">
                     <div className="text-center order-2 md:order-none">
                         <h1 className="text-3xl text-blackBlue my-[3%">Hi Iam Safin Ali <br /> I am Junior Web Developer</h1>
                     </div>

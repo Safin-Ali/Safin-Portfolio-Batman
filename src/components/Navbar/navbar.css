@@ -1,0 +1,160 @@
+/* =========================
+        Google Font
+============================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* =========================
+    Dark Mode Button Start
+============================*/
+input[type=checkbox] {
+    display: none
+}
+
+.themeBtn {
+    background-color: #faf1e6;
+    width: 80px;
+    height: 35px;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.themeBtn::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff00;
+    box-shadow: 3px 0 16px -6px;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    transition: all .6s ease-in-out
+}
+
+input:checked+.themeBtn {
+    background-color: #14274e
+}
+
+input:active+.themeBtn::before {
+    width: 45%
+}
+
+label svg {
+    position: absolute;
+    transition: all 1s linear
+}
+
+.sun {
+    width: 20px;
+    top: 20%;
+    left: 7%;
+    z-index: 1
+}
+
+.moon {
+    width: 20px;
+    top: 20%;
+    left: 93%;
+    transform: translateX(-100%);
+    z-index: 1
+}
+
+input:checked+.themeBtn::before {
+    left: 97%;
+    background-color: #ffffff30;
+    transform: translateX(-100%);
+    box-shadow: -3px 0 16px -6px #3ab4f2
+}
+
+/* =========================
+    Dark Mode Button End
+============================*/
+
+.brand-text {
+    font-family: 'Lobster', cursive;
+}
+
+.navItem {
+    text-decoration: none;
+    color: var(--navItems);
+    font-weight: 600;
+    transition: .5s ease-in;
+    position: relative;
+    font-family: var(--FF-Reem-Kufi);
+}
+
+.navItem::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    bottom: -10%;
+    height: 2px;
+    background: var(--navHover);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navItem:hover {
+    color: var(--navHover);
+    transition: color .3s ease-in-out;
+}
+
+.navItem:hover::after {
+    transform: scaleX(1);
+}
+
+.resnav{
+    position: fixed;
+    top: 55%;
+    left: 2%;
+    transform: translateY(-50%);
+    background: var(--resNavItems);
+    padding: 0 .9375rem;
+    border-radius: .625rem;
+    opacity: 0.2;
+    transition: all .3s ease-out;
+}
+.resnav a{
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+}
+.resnav a:hover{
+    opacity: 1;
+}
+.resnav:hover{
+    opacity: 1;
+}
+
+/* =========================
+   font-awesome icon color
+============================*/
+.fa-xl.fa-house::before{
+    color: #EF314C;
+}
+
+.fa-xl.fa-house::after{
+    color: #08ec95;
+}
+
+.fa-xl.fa-gears{
+    color: #587AA1;
+}
+.fa-xl.fa-head-side-brain::before{
+    color: #EF314C;
+}
+.fa-xl.fa-head-side-brain::after{
+    color: #ffaf37;
+}
+.fa-xl.fa-address-card::before{
+    color: var(--nav-user);
+}
+.fa-xl.fa-address-card::after{
+    color: #33B9EF;
+}
+.fa-xl.fa-messages{
+    color: #0b6ad6;
+}

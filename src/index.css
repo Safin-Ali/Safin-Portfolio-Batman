@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* =========================
+       Google Font
+============================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400;500;600;700&display=swap');
+
+/* =========================
+        CSS Variable
+============================*/
+
+:root{
+  --bodybg : #F2F7FF;
+  --FF-Poppins : 'Poppins', sans-serif;
+  --FF-Reem-Kufi : 'Reem Kufi Fun', sans-serif;
+  --blackBlueLight : #041C32;
+  --blackBlueLight-low-opacity : rgba(4, 28, 50, 0.685);
+  --blackBlueLight-low-drop : rgba(0, 0, 0, 0.15);
+  --glowBase : #091353;
+  --navItems : #091353;
+  --navHover : #0e28d6;
+  --resNavItems : #e0eafd;
+  --tag : #f1f5f6;
+  --nav-user : #3f4d55;
+  --card-bg: #f8fcff;
+  --html: #F16529;
+  --css: #2965F1;
+  --javascript: #F7DF1E;
+  --mongodb: #00684A;
+  --nodeJS: #77B062;
+  --tailwind: #38BDF8;
+  --bootstrap: #7C0AF8;
+  --purple: #6D67E4;
+}
+
+.dark-theme{
+      --bodybg : #010409;
+      --glowBase : #F2F2F2;
+      --F-Poppins : 'Poppins',sans-serif;
+      --blackBlueLight : #e1e1e1;
+      --navItems : #f8eee1;
+      --tag: #0a0a1b;
+      --navHover : #F2F2F2;
+      --resNavItems : #1B2430;
+      --nav-user : #e1e1e1;
+      --blackBlueLight-low-opacity : #ffffffaf;
+      --blackBlueLight-low-drop : rgba(255, 255, 255, 0.30);
+      --card-bg: #1B2430;
+}
+
+/* =========================
+      General CSS
+============================*/
+
+html{
+      scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bodybg);
+  font-family: var(--FF-Poppins);
+  transition: all .5s ease-in;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.text-glow{
+  text-shadow: 0px 0px 40px var(--glowBase);
+}
+
+.drop-shaddow-sa{
+  filter: drop-shadow(0px 4px 3px var(--blackBlueLight-low-drop));
+}
+
+.shadow-bottom{
+  box-shadow: 0px 0px 5px 0px var(--blackBlueLight-low-opacity);
+}

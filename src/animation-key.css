@@ -1,0 +1,59 @@
+@keyframes service-rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes service-flip {
+    0%{
+        transform: rotateY(0deg);
+    }
+    25%{
+        transform: rotateY(60deg);
+    }
+    50%{
+        transform: rotateY(0deg);
+    }
+    75%{
+        transform: rotateY(-60deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes service-bug {
+    0%{
+        transform: translateX(270px) rotate(-90deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: translateY(-99%);
+    }
+}
+
+@keyframes service-api {
+    0%{
+        color: var(--blackBlueLight);
+    }
+    25%{
+        color: var(--css);
+    }
+    50%{
+        color: var(--mongodb);
+    }
+    75%{
+        color: var(--bootstrap);
+    }
+    100%{
+        color: var(--html);
+    }
+}

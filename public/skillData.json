@@ -1,0 +1,44 @@
+[
+    {
+        "name": "HTML5",
+        "bgColor": "F16529",
+        "linearColor": null,
+        "value": 75
+    },
+    {
+        "name": "CSS3",
+        "bgColor": "2965F1",
+        "linearColor": null,
+        "value": 60
+    },
+    {
+        "name": "JavaScript",
+        "bgColor": "F7DF1E",
+        "linearColor": null,
+        "value": 70
+    },
+    {
+        "name": "Node JS",
+        "bgColor": "77B062",
+        "linearColor": null,
+        "value": 40
+    },
+    {
+        "name": "Express JS",
+        "bgColor": "77B062",
+        "linearColor": null,
+        "value": 60
+    },
+    {
+        "name": "MongoDB",
+        "bgColor": "00684A",
+        "linearColor": null,
+        "value": 50
+    },
+    {
+        "name": "CSS Framework",
+        "bgColor": null,
+        "linearColor": ["7C0AF8","38BDF8"],
+        "value": 95
+    }
+]

@@ -14,28 +14,30 @@
         CSS Variable
 ============================*/
 
-:root{
-  --bodybg : #F2F7FF;
-  --FF-Poppins : 'Poppins', sans-serif;
-  --FF-Reem-Kufi : 'Reem Kufi Fun', sans-serif;
-  --blackBlueLight : #041C32;
-  --blackBlueLight-low-opacity : rgba(4, 28, 50, 0.685);
-  --blackBlueLight-low-drop : rgba(0, 0, 0, 0.15);
-  --glowBase : #091353;
-  --navItems : #091353;
-  --navHover : #0e28d6;
-  --resNavItems : #e0eafd;
-  --tag : #f1f5f6;
-  --nav-user : #3f4d55;
-  --card-bg: #f8fcff;
-  --html: #F16529;
-  --css: #2965F1;
-  --javascript: #F7DF1E;
-  --mongodb: #00684A;
-  --nodeJS: #77B062;
-  --tailwind: #38BDF8;
-  --bootstrap: #7C0AF8;
-  --purple: #6D67E4;
+@layer base {
+  :root{
+    --bodybg : #F2F7FF;
+    --FF-Poppins : 'Poppins', sans-serif;
+    --FF-Reem-Kufi : 'Reem Kufi Fun', sans-serif;
+    --blackBlueLight : #041C32;
+    --blackBlueLight-low-opacity : rgba(4, 28, 50, 0.685);
+    --blackBlueLight-low-drop : rgba(0, 0, 0, 0.15);
+    --glowBase : #091353;
+    --navItems : #091353;
+    --navHover : #0e28d6;
+    --resNavItems : #e0eafd;
+    --tag : #f1f5f6;
+    --nav-user : #3f4d55;
+    --card-bg: #f8fcff;
+    --html: #F16529;
+    --css: #2965F1;
+    --javascript: #F7DF1E;
+    --mongodb: #00684A;
+    --nodeJS: #77B062;
+    --tailwind: #38BDF8;
+    --bootstrap: #7C0AF8;
+    --purple: #6D67E4;
+  }
 }
 
 .dark-theme{

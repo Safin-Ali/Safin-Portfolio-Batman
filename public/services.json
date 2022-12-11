@@ -1,0 +1,34 @@
+[
+    {
+        "color": "61DBFB",
+        "anim": "service-spin",
+        "icon": "fa-brands fa-react",
+        "logo": null,
+        "text": "Create React Application",
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem labore eligendi voluptatibus enim, est saepe sunt porro"
+    }, 
+    {
+        "color": "F16529",
+        "anim": "service-flip",
+        "icon": null,
+        "logo": "https://i.ibb.co/sPmGkvG/Java-Script-logo.png",
+        "text": "JavaScript Developer",
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem labore eligendi voluptatibus enim, est saepe sunt porro"
+    },
+    {
+        "color": "EF4444",
+        "anim": "service-bug",
+        "icon": "fa-solid fa-bug",
+        "logo": null,
+        "text": "Bugs Fix",
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem labore eligendi voluptatibus enim, est saepe sunt porro"
+    },
+    {
+        "color": null,
+        "anim": "service-api",
+        "icon": "fa-duotone fa-server",
+        "logo": null,
+        "text": "Rest API",
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem labore eligendi voluptatibus enim, est saepe sunt porro"
+    }
+]

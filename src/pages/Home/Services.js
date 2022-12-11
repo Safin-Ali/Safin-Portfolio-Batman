@@ -6,8 +6,6 @@ const Services = () => {
 
     const services = useFetch('services.json')
 
-    console.log(services)
-
     return (
         <section className="my-[3%]" id="services">
 

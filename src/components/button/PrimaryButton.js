@@ -1,8 +1,8 @@
 import React from 'react';
 
-const PrimaryButton = ({children,classname=''}) => {
+const PrimaryButton = ({children,classname='',onClick=null}) => {
     return (
-        <button className={`${classname} bg-gradient-to-r from-bootstrap to-tailwind`}>{children}</button>
+        <button onClick={onClick} className={`${classname} bg-gradient-to-r from-bootstrap to-tailwind`}>{children}</button>
     );
 };
 

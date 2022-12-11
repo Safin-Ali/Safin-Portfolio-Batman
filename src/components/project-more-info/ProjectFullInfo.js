@@ -1,6 +1,11 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 
-const ProjectFullInfo = ({data}) => {
+const ProjectFullInfo = () => {
+
+    const fetchDatas = useLoaderData();
+    console.log(fetchDatas)
+
     return (
         <>
             <h1>Info</h1>

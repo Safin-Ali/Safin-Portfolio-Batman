@@ -23,7 +23,7 @@ const ShowcaseCard = ({data}) => {
                 <div className="flex justify-center gap-x-5 pb-4">
                   <a href={liveLink} target="_blank" className="primary-btn text-white rounded-xl px-4 py-1.5"><i className="fa-regular fa-globe mr-2"></i>Live</a>
                   <a href={sourceCode} target="_blank" className="primary-btn text-white rounded-xl px-4 py-1.5"><i className="fa-brands fa-github mr-2"></i>GitHub</a>
-                  <Link to={``} className="primary-btn text-white rounded-xl px-4 py-1.5">More</Link>
+                  <Link to={`/project/${data._id}`} className="primary-btn text-white rounded-xl px-4 py-1.5">More</Link>
                 </div>
               </div>
           </div>

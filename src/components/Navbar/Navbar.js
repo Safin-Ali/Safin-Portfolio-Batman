@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import DarkButton from '../dark-button/DarkButton';
 import './navbar.css'
 
@@ -12,12 +13,13 @@ const Navbar = () => {
                     <h3 className="brand-text text-2xl text-sweetWhite">SA Safin Ali</h3>
                 </div>
                 <ul className="md:flex hidden items-center list-none">
-                    <li className="mx-3"><a href="#" className="navItem">Home</a></li>
+                    <li className="mx-3"><Link href="#" to={`/`} className="navItem">Home</Link></li>
                     <li className="mx-3"><a href="#skill" className="navItem">Skill</a></li>
                     <li className="mx-3"><a href="#services" className="navItem">Services</a></li>
                     <li className="mx-3"><a href="#projects" className="navItem">Projects</a></li>
                     <li className="mx-3"><a href="#about_me" className="navItem">About</a></li>
                     <li className="mx-3"><a href="#contact" className="navItem">Contact</a></li>
+                    <li className="mx-3"><Link to={`/blogs`} className="navItem">Blogs</Link></li>
                 </ul>
                 <div>
                     <DarkButton></DarkButton>

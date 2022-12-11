@@ -94,3 +94,7 @@ code {
 .shadow-bottom{
   box-shadow: 0px 0px 5px 0px var(--blackBlueLight-low-opacity);
 }
+
+.primary-btn{
+  background: linear-gradient(to right,var(--bootstrap),var(--tailwind));
+}

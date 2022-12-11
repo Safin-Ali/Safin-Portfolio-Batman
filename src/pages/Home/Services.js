@@ -4,7 +4,7 @@ import useFetch from '../../Hooks/useFetch';
 
 const Services = () => {
 
-    const services = useFetch('services.json')
+    const services = useFetch('https://portfolio-server-seven-alpha.vercel.app/services')
 
     return (
         <section className="my-[3%]" id="services">
@@ -14,7 +14,7 @@ const Services = () => {
         {/* <!-- box grid layout --> */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-center py-[1.5%] px-[4%]">
             {
-                services?.map((service,idx) => <ServiceCard key={idx} data={service}></ServiceCard>)
+                services?.map(service => <ServiceCard key={service._id} data={service}></ServiceCard>)
             }
         </div>
       </section>

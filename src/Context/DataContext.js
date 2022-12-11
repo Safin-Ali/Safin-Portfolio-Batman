@@ -6,7 +6,7 @@ export const HomePageData = createContext();
 const DataContext = ({children}) => {
 
     // skill date
-    const skillData =  useFetch(`skillData.json`)
+    const skillData =  useFetch(`https://portfolio-server-seven-alpha.vercel.app/skills`);
 
     const homePageData = {skillData}
     return (

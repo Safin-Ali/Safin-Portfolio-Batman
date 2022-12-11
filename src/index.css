@@ -17,6 +17,7 @@
 @layer base {
   :root{
     --bodybg : #F2F7FF;
+    --themeBtnBg : #faf1e6;
     --FF-Poppins : 'Poppins', sans-serif;
     --FF-Reem-Kufi : 'Reem Kufi Fun', sans-serif;
     --blackBlueLight : #041C32;
@@ -37,6 +38,7 @@
     --tailwind: #38BDF8;
     --bootstrap: #7C0AF8;
     --purple: #6D67E4;
+    --themeBtnBgPosition: 2%;
   }
 }
 
@@ -47,6 +49,7 @@
       --blackBlueLight : #e1e1e1;
       --navItems : #f8eee1;
       --tag: #0a0a1b;
+      --themeBtnBg:#14274e;
       --navHover : #F2F2F2;
       --resNavItems : #1B2430;
       --nav-user : #e1e1e1;
@@ -62,6 +65,9 @@
 html{
       scroll-behavior: smooth;
 }
+
+/* theme button */
+
 
 body {
   margin: 0;

@@ -12,7 +12,7 @@ input[type=checkbox] {
 }
 
 .themeBtn {
-    background-color: #faf1e6;
+    background-color: var(--themeBtnBg);
     width: 80px;
     height: 35px;
     border-radius: 20px;
@@ -34,7 +34,7 @@ input[type=checkbox] {
 }
 
 input:checked+.themeBtn {
-    background-color: #14274e
+    background-color: var(--themeBtnBg)
 }
 
 input:active+.themeBtn::before {

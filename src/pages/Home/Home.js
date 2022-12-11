@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../components/footer/Footer';
 import AboutMe from './AboutMe';
 import ContactForm from './ContactForm';
 import HeroSection from './HeroSection';
@@ -15,6 +16,7 @@ const Home = () => {
             <MyProjects></MyProjects>
             <AboutMe></AboutMe>
             <ContactForm></ContactForm>
+            <Footer></Footer>
         </>
     );
 };

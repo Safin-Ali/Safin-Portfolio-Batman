@@ -8,6 +8,10 @@ const DarkButton = () => {
             document.body.classList.contains('dark-theme') ? localStorage.setItem('theme','dark') : localStorage.setItem('theme','light')
     }
 
+    if(localStorage.getItem('theme') === 'dark'){
+        handleTheme()
+    }
+
     return (
         <>
             <input type="checkbox" id="themeBtn" />

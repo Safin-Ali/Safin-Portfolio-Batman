@@ -27,8 +27,9 @@ const Navbar = () => {
             {/* responsive nav */}
             <div className="resnav z-[1] block md:hidden">
                 <a href="#home" className="block my-3"><i className="fa-xl fa-duotone fa-house"></i></a>
-                <a href="#services" className="block my-3"><i className="fa-xl fa-sharp fa-solid fa-gears"></i></a>
                 <a href="#skill" className="block my-3"><i className="fa-xl fa-duotone fa-head-side-brain"></i></a>
+                <a href="#services" className="block my-3"><i className="fa-xl fa-sharp fa-solid fa-gears"></i></a>
+                <a href="#projects" className="block my-3"><i className="fa-xl fa-duotone fa-rectangle-history-circle-user"></i></a>
                 <a href="#about_me" className="block my-3"><i className="fa-xl fa-duotone fa-address-card"></i></a>
                 <a href="#contact" className="block my-3"><i className="fa-xl fa-sharp fa-solid fa-messages"></i></a>
             </div>

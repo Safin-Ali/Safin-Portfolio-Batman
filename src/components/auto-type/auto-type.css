@@ -5,11 +5,11 @@
 #autoTypeHero::after{
     content: '';
     position: absolute;
-    right: -5%;
+    right: -3%;
     top: 50%;
     transform: translateY(-50%);
     width: 2px;
-    background: red;
+    background: var(--blackBlueLight);
     height: 30px;
     animation: blink 0.7s infinite alternate;
 }

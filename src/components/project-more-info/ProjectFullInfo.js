@@ -8,12 +8,12 @@ const ProjectFullInfo = () => {
 
     return (
         <>
-            <section>
-                <Carousel data={moreInfo.images} className={`my-5 rounded-lg shadow`} itemHeight={`340px`}>
+            <section className={`py-[1.5%] px-[4%]`}>
+                <Carousel data={moreInfo.images} className={`my-5 rounded-lg shadow w-full sm:w-[80%] md:w-[70%] lg:w-1/2`} itemHeight={`h-[200px] sm:h-[340px] md:h-[340px]`}>
                 </Carousel>
 
-                <div className={`w-1/2 mx-auto my-5`}>
-                    <h4 className={`text-3xl font-semibold text-sweetWhite my-3`}>{moreInfo.header}</h4>
+                <div className={`w-full sm:w-[80%] md:w-[70%] lg:w-1/2 mx-auto my-5`}>
+                    <h4 className={`md:text-3xl font-semibold text-sweetWhite my-3`}>{moreInfo.header}</h4>
                     <ul className={`list-disc list-inside`}>
                         {
                             moreInfo.list.map((lst,idx) => <li key={idx} className={`my-2 text-sweetWhite`}>{lst}</li>)

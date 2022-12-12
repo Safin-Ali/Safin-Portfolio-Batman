@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Carousel = ({data=[],children,className='',itemHeight='340px'}) => {
+const Carousel = ({data=[],className='',itemHeight='340px'}) => {
 
     const[count,setCount] = useState(1);
 
@@ -46,10 +46,10 @@ const Carousel = ({data=[],children,className='',itemHeight='340px'}) => {
 
     return (
         <>
-            <div className={`w-[50%] mx-auto ${className} border overflow-hidden hide-scrlbar flex`}>
+            <div className={`mx-auto ${className} border overflow-hidden hide-scrlbar flex`}>
                 {
                     data.map((elm,idx) => <div key={idx} className={`w-full slide-item shrink-0`}>
-                            <div className={`bg-cover`} style={{backgroundImage:`url(${elm})`,width:'auto',height:itemHeight}}>
+                            <div className={`bg-cover ${itemHeight}`} style={{backgroundImage:`url(${elm})`,width:'auto'}}>
                             </div>
                     </div>)
                 }

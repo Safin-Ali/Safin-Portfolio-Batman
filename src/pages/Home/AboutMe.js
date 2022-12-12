@@ -18,7 +18,7 @@ const AboutMe = () => {
 
                     <ul className="text-sweetWhite">
                     <li className="my-5"><i className="fa-duotone fa-cake-candles mr-5"></i>Birthday : 6-5-2003</li>
-                    <li className="my-5"><i className="fa-duotone fa-person mr-5"></i>Age: <span id="age"></span> years</li>
+                    <li className="my-5"><i className="fa-duotone fa-person mr-5"></i>Age: {new Date().getFullYear() - 2003} years</li>
                     <li className="my-5"><i className="fa-solid fa-map-location-dot mr-5"></i>Address: Bera, Pabna, Bangladesh</li>
                     </ul>
                 </div>

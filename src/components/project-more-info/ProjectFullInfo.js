@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Carousel from '../carousel/Carousel';
+import Footer from '../footer/Footer';
 
 const ProjectFullInfo = () => {
 
@@ -21,6 +22,7 @@ const ProjectFullInfo = () => {
                     </ul>
                 </div>
             </section>
+            <Footer></Footer>
         </>
     );
 };

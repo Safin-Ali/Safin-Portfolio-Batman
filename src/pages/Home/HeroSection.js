@@ -1,7 +1,15 @@
 import React from 'react';
-import example from '../../images/avatar.png'
+import Carousel from '../../components/carousel/Carousel';
 
 const HeroSection = () => {
+
+    const bannerImg = [
+        'https://i.ibb.co/TR6HNmd/Code-typing-rafiki.png',
+        'https://i.ibb.co/9nJbhCn/Cross-platform-software-pana.png',
+        'https://i.ibb.co/FhtVGMG/Code-typing-amico.png',
+        'https://i.ibb.co/ZTyFpMg/Hand-coding-rafiki.png'
+    ]
+
     return (
         <>
             <section className="my-[3%]" id="home">
@@ -17,8 +25,8 @@ const HeroSection = () => {
                         </div>
                     </div>
                     {/* my-self image*/}
-                    <div className="border border-blackBlue order-1 md:order-none w-1/2 mx-auto cursor-grab rounded-[50%]">
-                        <img src={example} alt="Author-Avatar"/>
+                    <div className="order-1 md:order-none w-full md:w-[80%] mx-auto cursor-grab">
+                        <Carousel data={bannerImg} duration={3000} className={`w-full`} itemHeight={'h-[340px] lg:h-[450px]'}></Carousel>
                     </div>
                 </div>
             </section>

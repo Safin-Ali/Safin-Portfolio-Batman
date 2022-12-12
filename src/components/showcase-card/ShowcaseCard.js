@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ShowcaseCard = ({data}) => {
-    console.log(data)
     const {name,thumb,technology,liveLink,sourceCode} = data;
     return (
         <>

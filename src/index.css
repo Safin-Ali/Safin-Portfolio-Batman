@@ -78,6 +78,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* for chorme */
+.hide-scrlbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* mozila */
+
+.hide-scrlbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

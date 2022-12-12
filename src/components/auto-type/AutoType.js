@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const AutoType = ({text=[],id}) => {
+const AutoType = ({text=[],id,dura=2000,rmvSpeed=100,typeSpeed=300}) => {
     const[count,setCount] = useState(0);
 
     function everyChar (arr) {
@@ -17,7 +17,7 @@ const AutoType = ({text=[],id}) => {
                 const textNode = document.createTextNode(arr[pushCount])
                 currArea.appendChild(textNode)
                 pushCount++
-            },300)
+            },typeSpeed)
         })
     }
 
@@ -25,7 +25,7 @@ const AutoType = ({text=[],id}) => {
         return new Promise(resolve =>{
             setTimeout(()=>{
                 resolve(true)
-            },2000)
+            },dura)
         })
     }
 
@@ -38,7 +38,7 @@ const AutoType = ({text=[],id}) => {
                     return resolve(true)
                 }
                 return currentText.innerText = currentText.innerText.substring(0,currentText.innerText.length-1)
-            },100)
+            },rmvSpeed)
         })
     }
 

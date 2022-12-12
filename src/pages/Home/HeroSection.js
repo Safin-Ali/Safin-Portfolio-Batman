@@ -14,14 +14,14 @@ const HeroSection = () => {
 
     return (
         <>
-        <AutoType text={['Front End Developer','Backend End Developer','MERN Stack Developer']} id={'autoTypeHero'}></AutoType>
+        <AutoType typeSpeed={100} rmvSpeed={100} text={['Front End Developer','Backend End Developer','MERN Stack Developer']} id={'autoTypeHero'}></AutoType>
 
             <section className="my-[3%]" id="home">
                 {/*  my selft text  */}
                 <div className="grid gap-5 sm:grid-cols-2 items-center justify-center py-[1.5%] px-[4%]">
                     <div className="text-center order-2 md:order-none">
                         <h1 className="text-3xl font-semibold text-blackBlue my-[3%">
-                            Hi, I am <span id="autoTypeHero"></span>
+                            Hi, I am <span id="autoTypeHero"></span> <span className={`cursor`}></span>
                         </h1>
                         
                         <div className={`my-5`}>

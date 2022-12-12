@@ -1,11 +1,12 @@
-#autoTypeHero{
+.cursor{
     position: relative;
+    margin-left: 5px;
 }
 
-#autoTypeHero::after{
+.cursor::after{
     content: '';
     position: absolute;
-    right: -3%;
+    right: 0%;
     top: 50%;
     transform: translateY(-50%);
     width: 2px;

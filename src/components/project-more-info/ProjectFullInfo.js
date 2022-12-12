@@ -9,7 +9,7 @@ const ProjectFullInfo = () => {
     return (
         <>
             <section>
-                <Carousel data={moreInfo.images}>
+                <Carousel data={moreInfo.images} className={`my-5 rounded-lg shadow`} itemHeight={`340px`}>
                 </Carousel>
 
                 <div className={`w-1/2 mx-auto my-5`}>

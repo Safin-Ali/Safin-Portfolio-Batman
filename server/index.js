@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 
-const uri = "mongodb+srv://PORTFOLIO-SA:yFzRSWPAJVp3csJa@cluster01.rhyj5nw.mongodb.net/?retryWrites=true&w=majority";
+const uri = `mongodb+srv://${process.env.MongoDB_USERNAME}:${process.env.MongoDB_PASS}@cluster01.rhyj5nw.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 async function run () {

@@ -13,7 +13,7 @@ const ContactForm = () => {
         const visitorSubject = form.visitorSub.value;
         const visitorDesc = form.visitorDesc.value;
         const info = {visitorName,visitorEmail,visitorSubject,visitorDesc};
-        const res = await axios.post('http://localhost:5000/sendEmail',info);
+        const res = await axios.post('https://portfolio-server-seven-alpha.vercel.app/sendEmail',info);
         if(res.data.accepted){
             window.alert('mail sent success full')
             return form.reset()

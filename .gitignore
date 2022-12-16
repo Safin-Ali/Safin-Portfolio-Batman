@@ -5,6 +5,13 @@
 /.pnp
 .pnp.js
 
+# environment files
+/server/.env
+
+# Modules files
+/server/node_modules
+.vercel
+
 # Firebase
 .firebaserc
 .firebase

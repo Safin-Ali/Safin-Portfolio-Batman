@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React from 'react';
 import PrimaryButton from '../../components/button/PrimaryButton';
 import FloatingInput from '../../components/float-input/FloatingInput';
@@ -5,15 +6,20 @@ import FloatingInput from '../../components/float-input/FloatingInput';
 const ContactForm = () => {
 
     async function handleFormData (e) {
-        e.preventDefault()
+        e.preventDefault();
         const form = e.target;
         const visitorName = form.visitorName.value;
         const visitorEmail = form.visitorEmail.value;
         const visitorSubject = form.visitorSub.value;
         const visitorDesc = form.visitorDesc.value;
-        const info = {visitorName,visitorEmail,visitorSubject,visitorDesc}
-        console.log(info)
+        const info = {visitorName,visitorEmail,visitorSubject,visitorDesc};
+        const res = await axios.post('http://localhost:5000/sendEmail',info);
+        if(res.data.accepted){
+            window.alert('mail sent success full')
+            return form.reset()
+        }        
     }
+
 
     return (
         <>
